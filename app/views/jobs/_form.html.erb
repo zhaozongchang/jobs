@@ -1,0 +1,17 @@
+<%= simple_form_for @job do |f| %>
+<div class="group">
+  <%= f.input :title, label: "标题" %>
+</div>
+<div class="group">
+  <%= f.input :description , label: "内容"%>
+</div>
+<div class="group">
+  <%= f.input :company, label: "公司" %>
+</div>
+<div class="group">
+  <%= f.input :url, label: "网址" %>
+</div>
+<div class="group">
+  <%= f.submit "添加工作", data: { disable_with: "Submitting..." } %>
+</div>
+<% end %>
