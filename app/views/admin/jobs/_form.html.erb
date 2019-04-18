@@ -18,6 +18,9 @@
   <%= f.input :url, label: "网址", input_html: { class: "form-control" } %>
 </div>
 <div class="group">
+  <%= f.input :is_hidden, label: "隐藏" %>
+</div>
+<div class="group">
   <%= f.submit "添加工作", data: { disable_with: "Submitting..." } %>
 </div>
 <% end %>

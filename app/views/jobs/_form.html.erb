@@ -18,6 +18,9 @@
   <%= f.input :wage_upper_bound, :label => "薪资上限" %>
 </div>
 <div class="group">
+  <%= f.input :is_hidden %>
+</div>
+<div class="group">
   <%= f.submit "添加工作", data: { disable_with: "Submitting..." } %>
 </div>
 <% end %>
