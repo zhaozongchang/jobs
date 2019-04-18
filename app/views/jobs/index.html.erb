@@ -1,9 +1,8 @@
-<div class="pull-right">
-  <%= link_to("新增Job", new_job_path, class: "btn btn-default")%>
+<div id="jobs">
+  <% @jobs.each do |job| %>
+  <div class="job">
+    <h2><%= link_to(job.title, job_path(job) )%></h2>
+    <p><%= job.company %></p>
+  </div>
+  <% end %>
 </div>
-<% @jobs.each do |job| %>
-<h2><%= link_to(job.title, job_path(job) )%> </h2>
-<p><%= job.company %></p>
-
-
-<% end %>
