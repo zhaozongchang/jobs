@@ -17,4 +17,6 @@
 //= require bootstrap/dropdown
 //= require bootstrap/modal
 //= require autosize.min
+//= require social-share-button
+//= require social-share-button/wechat
 //= require_tree .

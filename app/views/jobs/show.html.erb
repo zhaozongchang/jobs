@@ -18,9 +18,12 @@
         <h5>工作地址：</h5>
         <p><%= @job.address %></p>
       </div>
+      <div class="text-center">
+        <%= link_to("投个简历", new_job_resume_path(@job), class: "btn btn-default") %>
+      </div>
+      <%= social_share_button_tag(@job.title) %><!-- 社交分享 -->
     </div>
+
   </div>
-  <div class="text-center">
-    <%= link_to("投交简历", new_job_resume_path(@job), class: "btn btn-default") %>
-  </div>
+
 </div>

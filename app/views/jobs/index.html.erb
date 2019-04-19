@@ -25,7 +25,7 @@
     <div class="job">
       <h2><%= link_to(job.title, job_path(job) )%></h2>
       <p><%= job.company %></p>
-      <p><%= job.wage_upper_bound %>K - <%= job.wage_lower_bound %>K</p>
+      <h4 style="color:#f7ae9d"><%= job.wage_upper_bound %>K - <%= job.wage_lower_bound %>K</h4>
     </div>
     <% end %>
   </div>
